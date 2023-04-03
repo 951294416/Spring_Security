@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.mapper.UserinfoMapper">
+    <!--int insertUserinfo();-->
+    <update id="insertUserinfo">
+        update userinfo set usernick=#{userinfo.usernick},name=#{userinfo.name},shenfenzheng=#{userinfo.shenfenzheng},address=#{userinfo.address},phone=#{userinfo.phone},sexid=#{userinfo.sexid},image=#{userinfo.image},jianjie=#{userinfo.jianjie} where username=#{username}
+    </update>
+</mapper>
